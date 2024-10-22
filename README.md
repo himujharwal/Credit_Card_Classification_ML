@@ -6,6 +6,7 @@ this repository contain the Credit Card Classification System, which use machine
 
 ### 1.Data collection:
 i collected data from Kaggle and I used KAGGLE API to access the data because data size was large that causing the issue on google colab uploading data option
+[Dataset of Credit Card Classification](https://www.kaggle.com/datasets/parisrohan/credit-score-classification)
 
 ### 2. Data Preprocessing : 
 a. This data is so messy. i found diffuclty to clean this data because almost every column need to be cleanded
