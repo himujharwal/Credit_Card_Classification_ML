@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Score Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Credit Score Classification</h1>
+    <form action="/predict" method="POST">
+        {% for col in ['Age', 'Annual_Income', 'Monthly_Inhand_Salary', 'Num_Bank_Accounts', 
+                       'Num_Credit_Card', 'Interest_Rate'] %} <!-- Adjust based on key columns -->
+            <label for="{{ col }}">{{ col }}</label><br>
+            <input type="text" id="{{ col }}" name="{{ col }}" required><br><br>
+        {% endfor %}
+        <input type="submit" value="Classify Credit Score">
+    </form>
+</body>
+</html>
