@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    {% comment %} jinja 2 loop is good method to compress the code and look cleaner rather than using the all column with each different label and so on {% endcomment %}
     <h1>Credit Score Classification</h1>
     <form action="/predict" method="POST">
         {% for col in [
@@ -16,7 +15,7 @@
             'Num_of_Delayed_Payment', 'Changed_Credit_Limit', 'Num_Credit_Inquiries',
             'Outstanding_Debt', 'Credit_Utilization_Ratio', 'Credit_History_Age',
             'Total_EMI_per_month', 'Amount_invested_monthly', 'Monthly_Balance',
-            'Credit_Score', 'Auto Loan', 'Credit-Builder Loan', 'Debt Consolidation Loan',
+             'Auto Loan', 'Credit-Builder Loan', 'Debt Consolidation Loan',
             'Home Equity Loan', 'Mortgage Loan', 'Not Specified', 'Payday Loan',
             'Personal Loan', 'Student Loan', 'Credit_Mix_Bad', 'Credit_Mix_Good',
             'Credit_Mix_Standard', 'Payment_of_Min_Amount_No', 'Payment_of_Min_Amount_Yes',
