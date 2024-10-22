@@ -3,8 +3,9 @@
 this repository contain the Credit Card Classification System, which use machine learning techique to help the bank to recoganise the customer creditworthines i.e. will customer able to repay loan amount in future and so on
 
 ## STEPS
+
 ### 1.Data collection:
-                       i collected data from Kaggle and I used KAGGLE API to access the data because data size was large that causing the issue on google colab uploading data option
+i collected data from Kaggle and I used KAGGLE API to access the data because data size was large that causing the issue on google colab uploading data option
 
 ### 2. Data Preprocessing : 
 a. This data is so messy. i found diffuclty to clean this data because almost every column need to be cleanded
@@ -16,10 +17,10 @@ some were easy to clean
 To be Honest My 65 % of my time was spent on that part 
 
 ### 3 . Model training and Evaluation model performace:
-       i tried 3-4 model on that and figured it out that Randomforest working well
+i tried 3-4 model on that and figured it out that Randomforest working well
 
 ### 4 . Local Deployment:
-    make flask app with simple format to predict about data
+make flask app with simple format to predict about data
 
 
 
